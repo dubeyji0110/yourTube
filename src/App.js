@@ -6,7 +6,7 @@ import VideoList from "./Components/VideoList";
 import useVideos from "./useVideos";
 
 function App() {
-	const [videos, search] = useVideos("react");
+	const [videos, search] = useVideos("reactjs");
 	const [selectedVideo, setSelectedVideo] = useState(null);
 
 	useEffect(() => {
