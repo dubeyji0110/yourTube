@@ -1,0 +1,27 @@
+.thumbnail{
+    display: flex;
+    margin-bottom: 5px;
+    border-bottom: 1.5px solid #ccc;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.thumbnail img{
+    width: 50%;
+    object-fit: contain;
+}
+
+.lower{
+    margin-left: 10px;
+}
+
+.lower > h4{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.thumbnail:hover{
+    background: #f3f3f3;
+}
