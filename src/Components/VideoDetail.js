@@ -1,11 +1,15 @@
 import React from "react";
 import "./VideoDetail.css";
 
-function VideoDetail({ video }) {
+function VideoDetail({ video, videos }) {
 
-    if (!video) return "Loading...";
+	if (!video) return "Loading...";
+	
+	let autoplay = true;
+	if (video === videos[0])
+		autoplay = false;
 
-    const src = `https://www.youtube.com/embed/${video.id.videoId}`;
+    const src = `https://www.youtube.com/embed/${video.id.videoId}?&autoplay=${autoplay}`;
 
 	return (
 		<div className='video'>
@@ -13,6 +17,7 @@ function VideoDetail({ video }) {
 				<iframe
 					src={src}
 					title='YouTube video player'
+					allow='autoplay; encrypted-media'
 					allowFullScreen></iframe>
 			</div>
 			<div className='detail'>

@@ -6,9 +6,9 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media only screen and (max-height: 1000px){
+@media only screen and (max-width: 1000px){
     .list{
         padding-right: 3px;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 }

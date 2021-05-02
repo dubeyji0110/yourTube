@@ -17,7 +17,7 @@ function App() {
 		<main className='app'>
 			<Search onFormSubmit={search} />
 			<section className='main'>
-				<VideoDetail video={selectedVideo} />
+				<VideoDetail video={selectedVideo} videos={videos} />
 				<VideoList videos={videos} onVideoSelect={setSelectedVideo} />
 			</section>
 		</main>

@@ -6,6 +6,8 @@ function VideoList({ videos, onVideoSelect }) {
 	return (
 		<div className='list'>
 			{videos.map((video) => {
+				if (video === videos[0])
+					return null;
                 return (<VideoItem
                     onVideoSelect={onVideoSelect}
                     video={video}
